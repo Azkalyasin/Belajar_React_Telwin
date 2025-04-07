@@ -2,6 +2,7 @@
 import Header from "./component/Header";
 import About from "./component/About";
 import Projects from "./component/Projects";
+import Testimonials from "./component/Testimonials";
 function App() {
 
 
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <About/>
       <Projects/>
+      <Testimonials/>
     </div>
     </>
   );
