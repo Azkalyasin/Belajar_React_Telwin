@@ -17,13 +17,13 @@ const Projects = () => {
       </h1>
       <p className="text-center text-gray-500 mb-8 max-w-80 mx-auto">Crafting Spaces, Building Legacies—Explore Our Portfolio</p>
       {/* Projects Card */}
-      <div className="flex md:flex-row ">
-        <Swiper spaceBetween={50} slidesPerView={3} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)} >
+      <div className="flex md:flex-row items-center">
+        <Swiper spaceBetween={20} slidesPerView={3} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)} >
           {projectsData.map((data, index) => (
             <SwiperSlide key={index}>
-              <div className="">
+              <div className="max-w-70 shadow-lg">
                 <img src={data.image} alt="" className="" />
-                <div className="border-2 text-center">
+                <div className="border-gray-600  text-center">
                   <h1>{data.title}</h1>
                   <p>{data.price}</p>
                   <p>{data.location}</p>
